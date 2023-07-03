@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 class LocationController extends ChangeNotifier {
   final String googleMapsAPI = 'https://maps.googleapis.com/maps/api/geocode/json?';
-  final apiKey = 'AIzaSyDfk4Swld8pzP7s-koLpx_MWe7Yq6tR_dE';
+  final apiKey = '';
 
   Future<LocationPermission> _requestLocationPermission() async {
     LocationPermission permission = await Geolocator.checkPermission();
